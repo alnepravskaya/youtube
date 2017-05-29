@@ -1,0 +1,198 @@
+@font-face {
+	font-family: FontAwesome;
+	src: url(fonts/fontawesome-webfont.woff);
+}
+
+body {
+	background: #142F42;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+search-bar {
+	display: block;
+	width: 100%;
+	margin: 6% 0;
+
+}
+
+search-bar input {
+	width: 40%;
+	display: block;
+	margin: auto;
+	height: 31px;
+	border-radius: 15px;
+	border: 0;
+	padding: 0 19px;
+	outline: none;
+	font-size: 20px;
+}
+
+video-card {
+	width: 320px;
+	height: 480px;
+	display: inline-block;
+	margin-left: 20px;
+	background: #fff;
+	vertical-align: top;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+video-card .wrapper {
+	padding: 30px;
+}
+
+video-card .desc {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+video-card .fa {
+	margin-right: 10px;
+}
+
+video-card .title {
+	position: absolute;
+	top: 56px;
+	background: rgba(111, 111, 111, .7);
+	color: #ffffff;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+	box-sizing: border-box;
+
+}
+
+paging-bar {
+	display: none;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+}
+
+paging-bar.visible {
+	display: block;
+}
+
+paging-bar button {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+	outline: none;
+	border-width: 2px 0;
+	border-style: solid none;
+	border-radius: 15px;
+	background: #fff;
+	transition: 0.2s;
+	margin-right: 10px;
+	width: 150px;
+	height: 45px;
+	font-size: 20px;
+	color: #333;
+}
+
+paging-bar button:hover {
+	cursor: pointer;
+	background: #E4E4E4;
+}
+
+p {
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.asterisk {
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	padding: 0;
+}
+
+video-cardbox {
+	overflow: hidden;
+	max-height: 480px;
+	display: block;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+@media (max-width: 1300px ) {
+	paging-bar button {
+		width: 110px;
+	}
+
+	paging-bar {
+		bottom: 10%;
+	}
+}
+
+@media (max-width: 800px ) {
+	paging-bar button {
+		width: 110px;
+	}
+
+	video-cardbox {
+		margin-top: 100px;
+	}
+	video-card {
+		margin-left: 0;
+		max-height: 370px;
+	}
+
+	video-card .wrapper {
+		padding: 10px;
+	}
+
+}
+
+@media (max-width: 600px ) {
+	paging-bar button {
+		width: 50px;
+		padding: 5px 4px;
+	}
+
+	paging-bar {
+		bottom: 1%;
+	}
+
+
+
+}
+
+@media (max-width: 415px ) {
+	video-cardbox {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	video-card {
+		margin-left: 0;
+		max-height: 417px;
+	}
+
+	paging-bar button {
+		width: 42px;
+		padding: 5px 4px;
+		font-size: 15px;
+	}
+
+	video-cardbox {
+		margin-top: 28px;
+	}
+
+}
+
+@media (max-width: 340px ) {
+
+	video-card {
+		max-height: 360px;
+	}
+}

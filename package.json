@@ -1,0 +1,25 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "eslint": "^3.19.0",
+    "webpack": "^2.4.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/eslint.cmd app --fix"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
